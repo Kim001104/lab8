@@ -19,7 +19,7 @@ int main() {
 
         //read command
         fgets(input,MAX_LINE,stdin);
-        printf("%s\n",input);
+        // printf("%s\n",input);
 
         //tokenize input
         token = strtok(input," \n\t");
@@ -38,6 +38,12 @@ int main() {
         if (strcmp(argv[0], "exit") == 0) {
             printf("Goodbye!\n");
             exit(0);
+        } else if(strcmp(argv[0],"cd") == 0) {
+            chdir(argv[1]); //change directory
+
+        } else if(strcmp(argv[0], "pwd") == 0) {
+            getcwd(input,MAX_LINE);
+            printf("%s\n",input);
         }
     }
 
