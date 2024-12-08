@@ -3,7 +3,7 @@
 #include <sys/types.h>
 
 
-#include "ls_command.h"
+#include "ls_command.h" // ls_command.h에 정의된 함수를 사용하기 위해 include
 
 
 
